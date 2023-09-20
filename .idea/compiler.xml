@@ -6,7 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="first-maven" />
+        <module name="web" />
+        <module name="database" />
+        <module name="service" />
       </profile>
     </annotationProcessing>
   </component>
