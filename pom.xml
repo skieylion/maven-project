@@ -23,6 +23,10 @@
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
         <spring.version>5.1.7.RELEASE</spring.version>
+        <dir>${project.basedir}</dir>
+        <mode>${settings.interactiveMode}</mode>
+        <home.path>${env.HOMEPATH}</home.path>
+        <home.user>${user.home}</home.user>
     </properties>
 
     <dependencyManagement>
@@ -66,7 +70,12 @@
     </dependencyManagement>
 
     <build>
-        <!--        <finalName>ROOT</finalName>-->
+        <resources>
+            <resource>
+                <directory>${project.basedir}/src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <pluginManagement>
             <plugins>
                 <plugin>
