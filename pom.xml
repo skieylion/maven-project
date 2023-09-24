@@ -27,6 +27,7 @@
         <mode>${settings.interactiveMode}</mode>
         <home.path>${env.HOMEPATH}</home.path>
         <home.user>${user.home}</home.user>
+        <app.env>dev</app.env>
     </properties>
 
     <dependencyManagement>
