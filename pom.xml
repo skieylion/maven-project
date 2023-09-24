@@ -190,6 +190,41 @@
 
     </build>
 
+    <profiles>
+        <profile>
+            <id>prod</id>
+            <activation>
+                <jdk>15</jdk>
+                <!--                <activeByDefault>true</activeByDefault>-->
+                <!--                <file>-->
+                <!--                    <missing>${basedir}/pom.xml</missing>-->
+                <!--                </file>-->
+                <!--                <property>-->
+                <!--                    <name>test.prop</name>-->
+                <!--                    <value>example</value>-->
+                <!--                </property>-->
+                <!--                <jdk>15</jdk>-->
+            </activation>
+            <properties>
+                <app.env>prod</app.env>
+                <mode>${settings.localRepository}</mode>
+            </properties>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <version>3.11.0</version>
+                        <configuration>
+                            <debug>true</debug>
+                            <optimize>false</optimize>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
     <distributionManagement>
         <snapshotRepository>
             <id>nexus</id>
