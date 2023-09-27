@@ -10,6 +10,13 @@
     <packaging>pom</packaging>
 
     <name>first-maven</name>
+
+    <scm>
+        <connection>scm:git:git@github.com:skieylion/maven-project.git</connection>
+        <developerConnection>scm:git:git@github.com:skieylion/maven-project.git</developerConnection>
+        <url>https://github.com/skieylion/maven-project</url>
+    </scm>
+
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
     <modules>
@@ -77,6 +84,14 @@
                 <filtering>true</filtering>
             </resource>
         </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>3.0.0-M7</version>
+            </plugin>
+        </plugins>
+
         <pluginManagement>
             <plugins>
                 <plugin>
