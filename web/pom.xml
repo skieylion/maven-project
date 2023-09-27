@@ -3,7 +3,7 @@
     <parent>
         <groupId>com.dmdev</groupId>
         <artifactId>first-maven</artifactId>
-        <version>1.0</version>
+        <version>1.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>web</artifactId>
@@ -28,7 +28,7 @@
         <dependency>
             <groupId>com.dmdev</groupId>
             <artifactId>service</artifactId>
-            <version>1.0</version>
+            <version>1.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>
