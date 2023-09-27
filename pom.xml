@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.dmdev</groupId>
     <artifactId>first-maven</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>pom</packaging>
 
     <name>first-maven</name>
@@ -15,7 +14,8 @@
         <connection>scm:git:git@github.com:skieylion/maven-project.git</connection>
         <developerConnection>scm:git:git@github.com:skieylion/maven-project.git</developerConnection>
         <url>https://github.com/skieylion/maven-project</url>
-    </scm>
+      <tag>first-maven-1.0</tag>
+  </scm>
 
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
