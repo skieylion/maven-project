@@ -17,12 +17,33 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>project-bom</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>3.8.1</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>5.0.0-alpha.11</version>
         </dependency>
     </dependencies>
     <build>
@@ -39,9 +60,9 @@
                         <phase>validate</phase>
                     </execution>
                 </executions>
-<!--                <configuration>-->
-<!--                    <message>Message from database</message>-->
-<!--                </configuration>-->
+                <!--                <configuration>-->
+                <!--                    <message>Message from database</message>-->
+                <!--                </configuration>-->
             </plugin>
         </plugins>
     </build>
